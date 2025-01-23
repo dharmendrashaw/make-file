@@ -39,4 +39,6 @@ github_release:
 	cp * release-from-makefile/
 	cd release-from-makefile
 	git checkout -b $(VERSION)
-	git commit -am "Release $(VERSION)"
+	git add .
+	git commit -m "Release $(VERSION)"
+	git push origin $(VERSION)
