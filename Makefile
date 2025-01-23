@@ -42,3 +42,4 @@ github_release:
 	git add .
 	git commit -m "Release $(VERSION)"
 	git push origin $(VERSION)
+	rm -rf release-from-makefile
